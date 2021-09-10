@@ -1,0 +1,49 @@
+.container {
+  margin: 0 100px;
+}
+.common-btn {
+  padding: 18px 40px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid $color-primary;
+  font-weight: bold;
+  cursor: pointer;
+}
+.square {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: $color-primary;
+  margin: 15px 0;
+}
+.line-group {
+  line-height: 8px;
+  .line-1 {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: $color-primary;
+  }
+  .line-2 {
+    width: 80px;
+    height: 1px;
+    display: inline-block;
+    background-color: $color-primary;
+  }
+  .line-3 {
+    width: 60px;
+    height: 1px;
+    display: inline-block;
+    background-color: $color-primary;
+  }
+}
+
+@media only screen and (max-width: 770px)  {
+  .common-btn {
+    padding: 10px 16px;
+  }
+  .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}

@@ -1,0 +1,37 @@
+#courses {
+  padding: 100px 0;
+  .courses-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .courses-left-col {
+      flex-basis: 50%;
+      .courses-text {
+        max-width: 350px;
+        button {
+          margin: 30px 0;
+        }
+      }
+    }
+    .courses-right-col {
+      flex-basis: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #courses {
+    .courses-row {
+      .courses-left-col {
+        flex-basis: 100%;
+      }
+      .courses-right-col {
+        flex-basis: 100%;
+        margin-top: 70px;
+      }
+    }
+  }
+}

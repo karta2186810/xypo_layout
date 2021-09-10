@@ -1,0 +1,38 @@
+#side-nav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  background-color: $color-primary;
+  z-index: 2;
+  transition: right 0.3s;
+  &.open {
+    right: 0px;
+  }
+  ul {
+    li {
+      list-style: none;
+      margin: 50px 20px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+#menu-btn {
+  width: 50px;
+  position: fixed;
+  right: 65px;
+  top: 35px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 770px) {
+  #menu-btn {
+    width: 40px;
+    right: 50px;
+  }
+}

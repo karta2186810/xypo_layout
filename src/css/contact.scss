@@ -1,0 +1,52 @@
+#contact {
+  .contact-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .contact-left-col {
+      flex-basis: 50%;
+      form {
+        max-width: 350px;
+        margin: 30px 0;
+        input {
+          width: 100%;
+          padding: 12px 10px;
+          margin-bottom: 5px;
+          outline: none;
+          box-shadow: none;
+          box-sizing: border-box;
+          border: 2px solid $color-light;
+        }
+        .btn-box {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          button {
+            flex-basis: 48%;
+            padding: 18px 0;
+          }
+        }
+      }
+    }
+    .contact-right-col {
+      flex-basis: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #contact {
+    .contact-row {
+      .contact-left-col{
+        flex-basis: 100%;
+      }
+      .contact-right-col {
+        flex-basis: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+}

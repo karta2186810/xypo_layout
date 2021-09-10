@@ -1,0 +1,23 @@
+.social-icons {
+  width: 50px;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  img {
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .social-icons {
+    img {
+      width: 14px;
+      margin: 15px auto;
+    }
+  }
+}

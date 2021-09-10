@@ -1,0 +1,17 @@
+* {
+  font-family: sans-serif;
+}
+p {
+  color: $text-secondary;
+}
+h1 {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 770px) {
+  h1 {
+    font-size: 25px;
+  }
+}
