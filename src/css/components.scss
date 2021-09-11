@@ -8,6 +8,11 @@
   border: 2px solid $color-primary;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s;
+  &:hover, &:active {
+    color: white;
+    background-color: $color-primary;
+  }
 }
 .square {
   display: inline-block;

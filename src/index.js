@@ -1,4 +1,5 @@
 import SmoothScroll from 'smooth-scroll'
+import './js/animation'
 import './css/index.scss'
 
 
